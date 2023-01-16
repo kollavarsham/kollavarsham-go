@@ -18,7 +18,7 @@ $ npm install kollavarsham
 $ pip install kollavarsham
 ```
 
-### Go [![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/kollavarsham/kollavarsham-go)](https://github.com/kollavarsham/kollavarsham-go)
+### Go [![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/kollavarsham/kollavarsham-go?filename=converter%2Fgo.mod)](https://github.com/kollavarsham/kollavarsham-go) [![Go Reference](https://pkg.go.dev/badge/github.com/kollavarsham/kollavarsham-go/converter/v2.svg)](https://pkg.go.dev/github.com/kollavarsham/kollavarsham-go/converter/v2)
 
 ```sh
 go get github.com/kollavarsham/kollavarsham-go/converter
@@ -41,6 +41,8 @@ $ dotnet add package KollavarshamOrg.Converter
 ```
 
 ## Usage
+
+Refer [the samples repository](https://github.com/kollavarsham/kollavarsham-samples) for working examples.
 
 ### TypeScript/JavaScript/Node.js
 
@@ -72,6 +74,36 @@ kv = kollavarsham.Kollavarsham(latitude=10, longitude=76.2, system="SuryaSiddhan
 
 today = kv.from_gregorian_date(date=now)
 print(today.year, today.ml_masa_name, today.date, '(' + today.naksatra.ml_malayalam + ')')
+```
+
+### Go
+
+```go
+package main
+
+import (
+	"fmt"
+	"time"
+
+	"github.com/kollavarsham/kollavarsham-go/converter/v2"
+)
+
+func main() {
+
+	latitude := float64(23.2)
+	longitude := float64(75.8)
+	system := "SuryaSiddhanta"
+	kv := converter.NewKollavarsham(&converter.Settings{
+		Latitude:  &latitude,
+		Longitude: &longitude,
+		System:    &system,
+	})
+
+	now := time.Now()
+	today := kv.FromGregorianDate(&now)
+
+	fmt.Printf("Today in Malayalam Year: %v %v %v (%v)\n", *today.Year(), *today.MlMasaName(), *today.Date(), *today.MlNaksatraName())
+}
 ```
 
 ### Java
