@@ -6,7 +6,7 @@
 
 ## Install
 
-### TypeScript/JavaScript/Node.js [![NPM version](https://img.shields.io/npm/v/kollavarsham)](https://www.npmjs.com/package/kollavarsham)
+### TypeScript/JavaScript/Node.js [![NPM version](https://badge.fury.io/js/kollavarsham.svg)](https://www.npmjs.com/package/kollavarsham)
 
 ```sh
 $ npm install kollavarsham
@@ -18,7 +18,7 @@ $ npm install kollavarsham
 $ pip install kollavarsham
 ```
 
-### Go [![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/kollavarsham/kollavarsham-go?filename=converter%2Fgo.mod)](https://github.com/kollavarsham/kollavarsham-go) [![Go Reference](https://pkg.go.dev/badge/github.com/kollavarsham/kollavarsham-go/converter/v2.svg)](https://pkg.go.dev/github.com/kollavarsham/kollavarsham-go/converter/v2)
+### Go [![Go project version](https://badge.fury.io/go/github.com%2Fkollavarsham%2Fkollavarsham-go%2Fconverter%2Fv2.svg)](https://pkg.go.dev/github.com/kollavarsham/kollavarsham-go/converter/v2)
 
 ```sh
 go get github.com/kollavarsham/kollavarsham-go/converter
@@ -34,7 +34,7 @@ go get github.com/kollavarsham/kollavarsham-go/converter
 </dependency>
 ```
 
-### C#/dotnet [![NuGet version](https://img.shields.io/nuget/v/KollavarshamOrg.Converter)](https://www.nuget.org/packages/KollavarshamOrg.Converter)
+### C#/dotnet [![NuGet version](https://badge.fury.io/nu/KollavarshamOrg.Converter.svg)](https://www.nuget.org/packages/KollavarshamOrg.Converter)
 
 ```sh
 $ dotnet add package KollavarshamOrg.Converter
